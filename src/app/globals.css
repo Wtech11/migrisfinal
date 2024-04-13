@@ -3,10 +3,9 @@
 @tailwind utilities;
 
 
-*{
+/* *{
   /* background: #e6e6e6; */
-  color: #4d4d4d;
-}
+  /* color: #4d4d4d; */
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

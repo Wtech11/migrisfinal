@@ -1,0 +1,124 @@
+#portlet_com_liferay_announcements_web_portlet_AnnouncementsPortlet_INSTANCE_announcLang .entries {
+    color: #2e5aac;
+    display: block;
+    font-size: 0.87rem;
+    word-wrap: break-word;
+    position: relative;
+    margin-bottom: 0;
+}
+
+
+#portlet_com_liferay_announcements_web_portlet_AnnouncementsPortlet_INSTANCE_announcLang .main-content-card {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.panel {
+    background-color: #fff;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+}
+#portlet_com_liferay_announcements_web_portlet_AnnouncementsPortlet_INSTANCE_announcLang .panel-body {
+    background-color: #eef2fa;
+    border-color: #89a7e0;
+    padding-bottom: 0;
+    border-style: solid;
+    border-width: 0.0625rem;
+    border-radius: 0.25rem;
+}
+.alert-info, .portlet-msg-help, .portlet-msg-info, .portlet-msg-progress {
+    background-color: #eef2fa;
+    border-color: #89a7e0;
+    color: #2e5aac;
+}
+.alert, .portlet-msg-alert, .portlet-msg-error, .portlet-msg-help, .portlet-msg-info, .portlet-msg-progress, .portlet-msg-success {
+    /* border-color: transparent; */
+    border-style: solid;
+    border-width: 0.0625rem;
+    border-radius: 0.25rem;
+    display: block;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    padding: 0.9375rem 1rem;
+    position: relative;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+.portlet-journal-content .journal-content-article {
+    word-wrap: break-word;
+}
+.top-actions .profile-button {
+    border: 0;
+    border-radius: 30px;
+    width: 320px;
+    background-color: #005EA8;
+    color: white;
+    height: 60px;
+    display: flex;
+    padding: 19px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.journal-content-article.customentry {
+    padding: 20px 190px;
+}
+.customentry p {
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+.top-actions {
+    display: flex;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+.top-actions .profile-button.basic {
+    padding: 18px;
+    color: white;
+    background-color: #FFA157;
+}
+a {
+    color: #005EA8;
+    cursor: pointer;
+}
+strong {
+    font-weight: 600;
+}
+img {
+    vertical-align: middle;
+}
+.panel-body {
+    padding: 0.75rem 1.25rem;
+}
+/* #portlet_com_liferay_announcements_web_portlet_AnnouncementsPortlet_INSTANCE_announcLang .panel-body {
+    background-color: #eef2fa;
+    border-color: #89a7e0;
+    padding-bottom: 0;
+    border-style: solid;
+    border-width: 0.0625rem;
+    border-radius: 0.25rem;
+} */
+.portlet-msg-info a strong {
+    display: flex;
+}
+.portlet-msg-info strong {
+    display: flex;
+    font-weight: 600;
+}
+.entries.customenteries {
+    padding: 0px 190px;
+}
+.entry-content.panel-body {
+    background-color: #eef2fa;
+    border-color: #89a7e0;
+    padding-bottom: 0;
+    border-style: solid;
+    border-width: 0.0625rem;
+    border-radius: 0.25rem;
+}
