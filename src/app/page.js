@@ -2,20 +2,17 @@
 
 import React from 'react';
 import Header from './compoonents/Header';
-import MainContent from './compoonents/Miancontent';
+// import MainContent from './compoonents/Miancontent';
 import Footer from './compoonents/Footer';
-// import Homepage from './compoonents/Homepage';
-
+import Homepage from './compoonents/Homepage';
 const Home = () => {
   return (
     <div>
       <Header/>
-      <MainContent/>
-      {/* <Homepage/> */}
+      {/* <MainContent/> */}
+      <Homepage/>
       <Footer/>
-      {/* <Header /> */}
-      {/* Add the rest of your page content here */}
-    </div>
+      </div>
   );
 }
 
