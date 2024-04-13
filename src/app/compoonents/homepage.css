@@ -51,6 +51,12 @@
 .portlet-journal-content .journal-content-article {
     word-wrap: break-word;
 }
+a.profile-button.basic:hover {
+    background-color: #ff7101;
+}
+a:hover{
+text-decoration: underline;
+}
 .top-actions .profile-button {
     border: 0;
     border-radius: 30px;

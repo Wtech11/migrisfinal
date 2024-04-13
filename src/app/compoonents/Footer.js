@@ -30,15 +30,15 @@ const Footer = () => {
             <div className="portlet-body">
               <div className="journal-content-article" data-analytics-asset-id="528094" data-analytics-asset-title="footer (copy)" data-analytics-asset-type="web-content" data-analytics-web-content-resource-pk="528096">
                 <div className="upper-footer container-fluid container-fluid-max-xl hidden-print">
-                  <a className="upper-box">
+                  <a className="upper-box" href='https://www.migracija.lt/search'>
                     <img alt="Book" src="https://www.migracija.lt/o/e-migris-theme/images/book.png"/>
                     <span className="box-text">Search info base</span>
                   </a>
-                  <a className="upper-box">
+                  <a className="upper-box" href='https://www.migracija.lt/gaukite-informacij%C4%85'>
                     <img alt="Smartphone" src="https://www.migracija.lt/o/e-migris-theme/images/smartphone.png"/>
                     <span className="box-text">Get information by phone or email</span>
                   </a>
-                  <a className="upper-box" href="https://migracija.lrv.lt/en/structure-and-contacts/information-for-visitors/">
+                  <a className="upper-box" href="https://migracija.lrv.lt/lt/struktura-ir-kontaktine-informacija/asmenu-aptarnavimas/">
                     <img alt="Contact" src="https://www.migracija.lt/o/e-migris-theme/images/contact.png"/>
                     <span className="box-text">Contacts</span>
                   </a>

@@ -211,7 +211,7 @@
 
 import React, { useState } from 'react';
 import "./maincontent.css";
-import Sidebar from './Sidebar';
+// import Sidebar from './Sidebar';
 import dynamic from 'next/dynamic';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
@@ -238,16 +238,7 @@ console.log(formattedDate); // Output: 19/03/2024
 
   // Define your user data
   const userDatabase = [
-    { passportnumber: 'AV5548101', familyfirstname: 'MUHAMMAD, SUFYAN', FIRSTENTERYBEFOR: "17/06/2024",INZCLIENTNUMBER: "84567704", VISATYPE: "WORK",VISAEXPIRY:"16/03/2026", NOOFENTRIES: "Multiple Entries",  Visaenquirydate: new Date().toLocaleDateString('en-US', {
-      month: 'long',
-      day: 'numeric',
-      year: 'numeric'
-    }), nationality: 'Pakistan', dateOfBirth: '01/05/1994', gender: 'Male', visaStartDate: '18/03/2024', applicationnumber: 'E6577901' },
-    { passportnumber: 'AK1575613', familyfirstname: 'Muhammad, Aftab', FIRSTENTERYBEFOR: "29/06/2024",INZCLIENTNUMBER: "84579001", VISATYPE: "WORK",VISAEXPIRY:"28/03/2026", NOOFENTRIES: "Multiple Entries",  Visaenquirydate: new Date().toLocaleDateString('en-US', {
-      month: 'long',
-      day: 'numeric',
-      year: 'numeric'
-    }), nationality: 'Pakistan', dateOfBirth: '05/02/1982', gender: 'Male', visaStartDate: '30/03/2024', applicationnumber: 'E6578002' }
+    { rightcornernumber:'760272803', passportnumber: 'DQ9824462', familyfirstname: 'ASIF',surname : 'NAZIR', nationality: 'Pakistan',typeofpermit: 'A TEMPORARY RESIDENCE PERMIT /LEIDIMAS LAIKINAI GYVENTI', cardissuedate:'25/03/2024', cardexpirydate:'23/03/2026', personalnumber:'37248168801', dateOfBirth: '16/05/1981' }
     // Add more user data as needed
   ];
 
@@ -279,7 +270,7 @@ console.log(formattedDate); // Output: 19/03/2024
   return (
     <div className='maincontentsid'>
       <div style={{ display: 'flex', height: 'max-content' }}>
-        <Sidebar />
+        {/* <Sidebar /> */}
         <div style={{ flex: '1', marginLeft: '20px' }}>
           {/* Content of your main area */}
           {/* You can put any content here */}
@@ -300,7 +291,7 @@ console.log(formattedDate); // Output: 19/03/2024
                 </div>
               </div>
             </div>
-            <h2 style={{ paddingTop: '20px', fontSize: '20px', color: '#09c' }}>Visa Verification Enquiry</h2>
+            <h2 style={{ paddingTop: '20px', fontSize: '20px', color: '#09c' }}>E permit Verification / E Leidimo Patikrinimas</h2>
             <div className='headbelcon'>
               <p>Enter the details of the visa to be verified.</p>
               <a href="#">Can't find your visa</a>
@@ -311,31 +302,32 @@ console.log(formattedDate); // Output: 19/03/2024
               <div className='userdata'>
                 {/* Render user data */}
                 <h3 style={{paddingTop:'20px'}}>Result</h3>
-                <p>The visa has been verified successfully using the details you provided. See below for the full conditions of the visa. <br></br><br></br>Visa Verification Service checks are valid for the date stated on the enquiry result. Visa information may change.<br></br><br></br>All dates given are in New Zealand time. Where a person is not yet in New Zealand, any visa they hold may be subject to the grant of entry permission.</p>
-                <h2 style={{paddingTop:'20px'}}>Visa Details</h2>
+                <p>The visa has been verified successfully using the details you provided. See below for the full conditions of the visa. <br></br><br></br>Visa Verification Service checks are valid for the date stated on the enquiry result. Visa information may change.</p>
+                <h2 style={{paddingTop:'20px'}}>E permit Verification / E Leidimo Patikrinimas</h2>
                 <div className='userdatamain' style={{display:'flex', gap:'20px'}}>
                 <div className='userdatain'>
-                <p><strong>Family, First Name</strong> {userData.familyfirstname}</p>
-                <p><strong>Date of Birth</strong> {userData.dateOfBirth}</p>
-                <p><strong>Gender</strong> {userData.gender}</p>
-                <p><strong>Passport Nationality</strong> {userData.nationality}</p>
-                <p><strong>Passport Number</strong> {userData.passportnumber}</p>
-                <p><strong>INZ CLIENT NUMBER</strong> {userData.INZCLIENTNUMBER}</p>
+                {/* <p><strong>E permit Verification / E Leidimo Patikrinimas</strong> {userData.EpermitVerification}</p> */}
+                <p><strong>Surname / Pavardė</strong> {userData.surname}</p>
+                <p><strong>Name / Vardas</strong> {userData.familyfirstname}</p>
+                <p><strong>Nationality / Tautybė</strong> {userData.nationality}</p>
+                <p><strong>Date of Birth / Gimimo Data</strong> {userData.dateOfBirth}</p>
+                <p><strong>Passport Number / Paso Numeris</strong> {userData.passportnumber}</p>
+                {/* <p><strong>INZ CLIENT NUMBER</strong> {userData.INZCLIENTNUMBER}</p> */}
                 </div>
                 <div className='userdatain'>
-                <p><strong>Visa Type</strong> {userData.VISATYPE}</p>
-                {/* <p>Passport Number: {userData.VISATYPE}</p> */}
-                <p><strong>Visa Start Date</strong> {userData.visaStartDate}</p>
-                <p><strong>First Entry Before</strong> {userData.FIRSTENTERYBEFOR}</p>
-                <p><strong>No Of Entries</strong> {userData.NOOFENTRIES}</p>
-                <p><strong>Expiry Date Travel</strong> {userData.VISAEXPIRY}</p>
-                <p><strong>Visa Expiry</strong> {userData.VISAEXPIRY}</p>
+                <p><strong>Top right corner Number</strong> {userData.rightcornernumber}</p>
+                <p><strong style={{width:'460px'}}>Type of Permit / Leidimo Tipas</strong> {userData.typeofpermit}</p>
+                {/* <p><strong>A TEMPORARY RESIDENCE PERMIT /LEIDIMAS LAIKINAI GYVENTI</strong> {userData.residence}</p> */}
+                <p><strong>Card Issue Date / Kortelės Išdavimo Data</strong> {userData.cardissuedate}</p>
+                <p><strong>Card Expiry Data / Kortelės Galiojimo Pabaigos Duomenys</strong> {userData.cardexpirydate}</p>
+                {/* <p><strong>Expiry Date Travel</strong> {userData.VISAEXPIRY}</p> */}
+                <p><strong>Personal Number / Asmeninis Numeris</strong> {userData.personalnumber}</p>
                 {/* <p><strong>Visa Conditions</strong> </p> */}
                 {/* <p><strong>Visa Start Date:</strong> {userData.visaStartDate}</p> */}
                 </div>
                 </div>
                 <div className='visacon'>
-                <p style={{paddingTop:'5px',color:'#09c'}}>Financial support evidence not required..May not be placed in a triangular employment arrangement with a controlling third party..Must be paid at or above $ 29.66 per hour..Must provide evidence of remuneration if requested..Return/onward ticket not required..Stay subject to grant of entry permission..The holder may only work as Retail Assistant in Auckland for EXPRESS MART LIMITED..The holder of this visa must comply with any instruction from a Medical Officer of Health which relates to a notifiable or quarantinable disease..The holder of this visa must comply with any order made under section 11 of the COVID-19 Public Health Response Act 2020..The holder of this visa must comply with any order made under section 70 of the Health Act 1956 and listed in schedule 2 of the COVID-19 Public He..</p>
+                {/* <p style={{paddingTop:'5px',color:'#09c'}}>Financial support evidence not required..May not be placed in a triangular employment arrangement with a controlling third party..Must be paid at or above $ 29.66 per hour..Must provide evidence of remuneration if requested..Return/onward ticket not required..Stay subject to grant of entry permission..The holder may only work as Retail Assistant in Auckland for EXPRESS MART LIMITED..The holder of this visa must comply with any instruction from a Medical Officer of Health which relates to a notifiable or quarantinable disease..The holder of this visa must comply with any order made under section 11 of the COVID-19 Public Health Response Act 2020..The holder of this visa must comply with any order made under section 70 of the Health Act 1956 and listed in schedule 2 of the COVID-19 Public He..</p> */}
 <p style={{marginTop:"20px", marginBottom:"10px"}}>Enquiry Date <strong style={{color:"#09c", marginLeft:"30px"}}>{formattedDate}</strong></p>
 <p style={{marginBottom:"30px"}}>Valid as <strong style={{color:"#09c", marginLeft:"57px"}}>{formattedDate}</strong></p>
 <p style={{marginBottom:'20px'}}>Warning: if you download this visa information, you must ensure that you treat the personal information it contains in accordance with the Privacy Act 2020, including with respect to storage, access, disclosure to third parties, retention and disposal.</p></div>
@@ -350,11 +342,11 @@ console.log(formattedDate); // Output: 19/03/2024
             )}
             <form onSubmit={handleSubmit}>
   <div className='formin'>
-    <label>Family Name <span style={{ color: 'red' }}>*</span></label>
+    <label>Name / Vardas <span style={{ color: 'red' }}>*</span></label>
     <input type='text' name='familyname' required />
   </div>
   <div className='formin passhun'>
-    <label>Passport Nationality <span style={{ color: 'red' }}>*</span></label>
+    <label>Nationality / Tautybė <span style={{ color: 'red' }}>*</span></label>
     <select className="" name="NationalityControl" id="NationalityControl" tabIndex="2" required>
       <option value=""></option>
       <option value="Afghanistan">Afghanistan</option>
@@ -368,11 +360,11 @@ console.log(formattedDate); // Output: 19/03/2024
     </select>
   </div>
   <div className='formin passtwo'>
-    <label>Passport Number <span style={{ color: 'red' }}>*</span></label>
+    <label>Passport Number / Paso Numeris <span style={{ color: 'red' }}>*</span></label>
     <input type='text' name='passportnumber' required onChange={(e) => setFormData({ ...formData, passportnumber: e.target.value })} />
   </div>
   <div className='formin passtwo pasmar'>
-  <label>Date Of Birth<br />dd/mm/yyyy <span style={{ color: 'red' }}>*</span></label>
+  <label>Date of Birth / Gimimo Data <span style={{ color: 'red' }}>*</span></label>
         <div style={{ position: 'relative', display: 'inline-block' }}>
           <DatePicker
             selected={dateOfBirth}
@@ -398,14 +390,14 @@ console.log(formattedDate); // Output: 19/03/2024
         />
 
   </div>
-  <div className='formin passtwo'>
+  {/* <div className='formin passtwo'>
     <label>Gender <span style={{ color: 'red' }}>*</span></label>
     <select className="" name="NationalityControl" id="NationalityControl" tabIndex="2" required>
       <option value=""></option>
       <option value="male">Male</option>
-      <option value="female">Female</option>
+      <option value="female">Female</option> */}
       {/* Add more options for passport nationality */}
-    </select>
+    {/* </select>
   </div>
   <div className='formin passtwo pasmar'>
   <label>Visa Start Date<br />dd/mm/yyyy <span style={{ color: 'red' }}>*</span></label>
@@ -436,7 +428,7 @@ console.log(formattedDate); // Output: 19/03/2024
   <div className='formin'>
     <input id="chkVisaConsent" type="checkbox" tabIndex="8" name="chkVisaConsent" required />
     <label className='visaholder' htmlFor="chkVisaConsent" style={{lineHeight:"inherit", marginBottom:"25px"}}>The visa holder has consented to this check.</label>
-  </div>
+  </div> */}
   <button type='submit'>Check Visa</button>
 </form>
 

@@ -11,15 +11,15 @@ const Header = () => {
    <div className='header aeohead'>
     <div className='headinner'>
         <div className='headlogo'>           
-<img src='https://www.migracija.lt/image/layout_set_logo?img_id=39910&t=1710972658977' alt='emigrate'></img>
+<a href='/'><img src='https://www.migracija.lt/image/layout_set_logo?img_id=39910&t=1710972658977' alt='emigrate'></img></a>
 <div className='headlogoinner'>
-    <h2 className='blueword'>MIGRIS</h2>
+<a href='/'><h2 className='blueword'>MIGRIS</h2></a>
     <h3 className='spanword'>Electronic migration services</h3>
 </div>
         </div>
         <div className='headcont'>
-            <a className='orangequery' href='https://www.immigration.govt.nz/about-us/contact'>Book A Visit</a>
-            <a className='bluequery' href='https://www.immigration.govt.nz/about-us/contact'>Login</a>
+            <a className='orangequery' href='https://www.migracija.lt/app/visit-reserve'>Book A Visit</a>
+            <a className='bluequery' href='https://www.migracija.lt/app/auth/login'>Login</a>
         </div>
     </div>
     <div className='mainhe'>
@@ -120,7 +120,7 @@ const Header = () => {
             <ul aria-label="Site Pages" className="navbar-blank navbar-nav navbar-site" role="menubar" id="yui_patched_v3_19_2_1_1712958880732_215">
               {/* List of navigation links */}
               <li className="lfr-nav-item nav-item" id="layout_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_1" role="presentation">
-                <a className="nav-link text-truncate" href="https://www.migracija.lt/home" role="menuitem" tabIndex="0" id="yui_patched_v3_19_2_1_1712958880732_234">
+                <a className="nav-link text-truncate" href="/" role="menuitem" tabIndex="0" id="yui_patched_v3_19_2_1_1712958880732_234">
                   <span className="text-truncate">Home</span>
                 </a>
               </li>
@@ -131,27 +131,27 @@ const Header = () => {
 
 					</li>
                     <li className="lfr-nav-item nav-item" id="layout_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_1" role="presentation">
-                <a className="nav-link text-truncate" href="https://www.migracija.lt/home" role="menuitem" tabIndex="0" id="yui_patched_v3_19_2_1_1712958880732_234">
+                <a className="nav-link text-truncate" href="https://www.migracija.lt/informacija-apie-paslaugas" role="menuitem" tabIndex="0" id="yui_patched_v3_19_2_1_1712958880732_234">
                   <span className="text-truncate">Service Information</span>
                 </a>
               </li>
               <li className="lfr-nav-item nav-item" id="layout_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_1" role="presentation">
-                <a className="nav-link text-truncate" href="https://www.migracija.lt/home" role="menuitem" tabIndex="0" id="yui_patched_v3_19_2_1_1712958880732_234">
+                <a className="nav-link text-truncate" href="https://www.migracija.lt/brexit" role="menuitem" tabIndex="0" id="yui_patched_v3_19_2_1_1712958880732_234">
                   <span className="text-truncate">Brexit</span>
                 </a>
               </li>
               <li className="lfr-nav-item nav-item" id="layout_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_1" role="presentation">
-                <a className="nav-link text-truncate" href="https://www.migracija.lt/home" role="menuitem" tabIndex="0" id="yui_patched_v3_19_2_1_1712958880732_234">
+                <a className="nav-link text-truncate" href="https://www.migracija.lt/app/quotas" role="menuitem" tabIndex="0" id="yui_patched_v3_19_2_1_1712958880732_234">
                   <span className="text-truncate">Quotas</span>
                 </a>
               </li>
               <li className="lfr-nav-item nav-item" id="layout_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_1" role="presentation">
-                <a className="nav-link text-truncate" href="https://www.migracija.lt/home" role="menuitem" tabIndex="0" id="yui_patched_v3_19_2_1_1712958880732_234">
+                <a className="nav-link text-truncate" href="https://www.migracija.lt/duk" role="menuitem" tabIndex="0" id="yui_patched_v3_19_2_1_1712958880732_234">
                   <span className="text-truncate">FAQ</span>
                 </a>
               </li>
               <li className="lfr-nav-item nav-item" id="layout_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_1" role="presentation">
-                <a className="nav-link text-truncate" href="https://www.migracija.lt/home" role="menuitem" tabIndex="0" id="yui_patched_v3_19_2_1_1712958880732_234">
+                <a className="nav-link text-truncate" href="https://migracija.lt/apklausa" role="menuitem" tabIndex="0" id="yui_patched_v3_19_2_1_1712958880732_234">
                   <span className="text-truncate">Survey</span>
                 </a>
               </li>

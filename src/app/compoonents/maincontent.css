@@ -1,6 +1,11 @@
-.maincontentsid {
+/* .maincontentsid {
     width: 820px;
     margin: auto;
+} */
+.maincontentsid {
+    width: 100%;
+    margin: 0;
+    padding: 20px 190px;
 }
 .maincontouter {
     display: flex;
@@ -33,28 +38,28 @@
     justify-content: space-between;
 }
 .headbelcon p {
-    font-size: 11px;
+    /* font-size: 11px; */
     padding-top: 5px;
 }
 .headbelcon a {
     text-decoration: underline;
-    font-size: 10px;
-    padding-top: 5px;
+    /* font-size: 10px;
+    padding-top: 5px; */
 }
-.maincoun p {
+/* .maincoun p {
     font-size: 10px;
     padding-top: 10px;
-}
+} */
 .mainform {
-    padding: 20px 0px 90px 0px;
+    padding: 20px 0px 20px 0px;
 }
 .userdatain p {
     color: #09c;
 }
-.visacon strong {
+/* .visacon strong {
     font-weight: 500 !important;
     font-size: 11px !important;
-}
+} */
 .formin {
     padding-bottom: 6px;
     display: flex;
@@ -83,7 +88,7 @@
 .formin label {
     font-size: 12px;
     /* margin-right: 50px; */
-    width: 150px;
+    width: 250px;
     line-height: 12px;
     /* display: flex; */
 }
@@ -97,13 +102,14 @@ label.visaholder {
 .userdatain p {
     padding-bottom: 5px;
     display: flex;
+    gap: 5px;
 }
 .userdatain strong {
-    width: 150px;
+    width: 250px;
 }
-.userdata p {
+/* .userdata p {
     font-size: 11px;
-}
+} */
 button.downbtn {
     background: #09c;
     color: #ffffff;
