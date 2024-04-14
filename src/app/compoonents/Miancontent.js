@@ -269,15 +269,15 @@ console.log(formattedDate); // Output: 19/03/2024
   };
   return (
     <div className='maincontentsid'>
-      <div style={{ display: 'flex', height: 'max-content' }}>
+      <div className='maxocont'>
         {/* <Sidebar /> */}
-        <div style={{ flex: '1', marginLeft: '20px' }}>
+        <div className='maxocontin'>
           {/* Content of your main area */}
           {/* You can put any content here */}
           <div className='maincoun'>
             
             <div className='maincontouter'>
-              <div id="innerContainer_LoggedInDiv2" className="styles_login__QaueI styles_firstLogin__5vd19 customaincon">
+              {/* <div id="innerContainer_LoggedInDiv2" className="styles_login__QaueI styles_firstLogin__5vd19 customaincon">
                 <div>
                   <span className="styles_fauxLabel__fMl5r">Acting for:</span>
                   <span id="innerContainer_CurrentEmployer" className="styles_firstLoginFont__0x2of">Visa Verification Service</span>
@@ -289,22 +289,22 @@ console.log(formattedDate); // Output: 19/03/2024
                   <span id="innerContainer_CurrentRepresentativeName">John</span>
                   <a id="innerContainer_logoutLinkControl" href="https://www.immigration.govt.nz/about-us/our-online-systems/visaview">logout</a>
                 </div>
-              </div>
+              </div> */}
             </div>
             <h2 style={{ paddingTop: '20px', fontSize: '20px', color: '#09c' }}>E permit Verification / E Leidimo Patikrinimas</h2>
-            <div className='headbelcon'>
+            {/* <div className='headbelcon'>
               <p>Enter the details of the visa to be verified.</p>
               <a href="#">Can't find your visa</a>
-            </div>
-            <p>Please enter these details exactly as they appear in the visa holder's current passport.</p>
+            </div> */}
+            {/* <p>Please enter these details exactly as they appear in the visa holder's current passport.</p> */}
           </div>
           {userData ? (
               <div className='userdata'>
                 {/* Render user data */}
-                <h3 style={{paddingTop:'20px'}}>Result</h3>
-                <p>The visa has been verified successfully using the details you provided. See below for the full conditions of the visa. <br></br><br></br>Visa Verification Service checks are valid for the date stated on the enquiry result. Visa information may change.</p>
-                <h2 style={{paddingTop:'20px'}}>E permit Verification / E Leidimo Patikrinimas</h2>
-                <div className='userdatamain' style={{display:'flex', gap:'20px'}}>
+                {/* <h3 style={{paddingTop:'20px'}}>Result</h3> */}
+                {/* <p>The visa has been verified successfully using the details you provided. See below for the full conditions of the visa. <br></br><br></br>Visa Verification Service checks are valid for the date stated on the enquiry result. Visa information may change.</p> */}
+                {/* <h2 style={{paddingTop:'20px'}}>E permit Verification / E Leidimo Patikrinimas</h2> */}
+                <div className='userdatamain'>
                 <div className='userdatain'>
                 {/* <p><strong>E permit Verification / E Leidimo Patikrinimas</strong> {userData.EpermitVerification}</p> */}
                 <p><strong>Surname / Pavardė</strong> {userData.surname}</p>
@@ -315,8 +315,8 @@ console.log(formattedDate); // Output: 19/03/2024
                 {/* <p><strong>INZ CLIENT NUMBER</strong> {userData.INZCLIENTNUMBER}</p> */}
                 </div>
                 <div className='userdatain'>
-                <p><strong>Top right corner Number</strong> {userData.rightcornernumber}</p>
-                <p><strong style={{width:'460px'}}>Type of Permit / Leidimo Tipas</strong> {userData.typeofpermit}</p>
+                <p className='foto'> {userData.rightcornernumber}</p>
+                <p><strong className='fullinput' style={{width:'460px'}}>Type of Permit / Leidimo Tipas</strong> {userData.typeofpermit}</p>
                 {/* <p><strong>A TEMPORARY RESIDENCE PERMIT /LEIDIMAS LAIKINAI GYVENTI</strong> {userData.residence}</p> */}
                 <p><strong>Card Issue Date / Kortelės Išdavimo Data</strong> {userData.cardissuedate}</p>
                 <p><strong>Card Expiry Data / Kortelės Galiojimo Pabaigos Duomenys</strong> {userData.cardexpirydate}</p>
@@ -328,16 +328,16 @@ console.log(formattedDate); // Output: 19/03/2024
                 </div>
                 <div className='visacon'>
                 {/* <p style={{paddingTop:'5px',color:'#09c'}}>Financial support evidence not required..May not be placed in a triangular employment arrangement with a controlling third party..Must be paid at or above $ 29.66 per hour..Must provide evidence of remuneration if requested..Return/onward ticket not required..Stay subject to grant of entry permission..The holder may only work as Retail Assistant in Auckland for EXPRESS MART LIMITED..The holder of this visa must comply with any instruction from a Medical Officer of Health which relates to a notifiable or quarantinable disease..The holder of this visa must comply with any order made under section 11 of the COVID-19 Public Health Response Act 2020..The holder of this visa must comply with any order made under section 70 of the Health Act 1956 and listed in schedule 2 of the COVID-19 Public He..</p> */}
-<p style={{marginTop:"20px", marginBottom:"10px"}}>Enquiry Date <strong style={{color:"#09c", marginLeft:"30px"}}>{formattedDate}</strong></p>
-<p style={{marginBottom:"30px"}}>Valid as <strong style={{color:"#09c", marginLeft:"57px"}}>{formattedDate}</strong></p>
-<p style={{marginBottom:'20px'}}>Warning: if you download this visa information, you must ensure that you treat the personal information it contains in accordance with the Privacy Act 2020, including with respect to storage, access, disclosure to third parties, retention and disposal.</p></div>
+{/* <p style={{marginTop:"20px", marginBottom:"10px"}}>Enquiry Date <strong style={{color:"#09c", marginLeft:"30px"}}>{formattedDate}</strong></p>
+<p style={{marginBottom:"30px"}}>Valid as <strong style={{color:"#09c", marginLeft:"57px"}}>{formattedDate}</strong></p> */}
+<p style={{marginBottom:'20px'}}>Warning: if you download this e permit information, you must ensure that you treat the personal information it contains in accordance with the Privacy Act 2020, including with respect to storage, access, disclosure to third parties, retention and disposal.</p></div>
 <button className='downbtn'> Download Result</button>
               </div>
             ) : (
           <div className='mainform'>
             {userNotFound && (
               <div className="user-not-found-message">
-                The details you have entered do not match a current visa issued by INZ. Please check the information provided.
+                The details you have entered do not match a current e-permit issued. Please check the information provided.
               </div>
             )}
             <form onSubmit={handleSubmit}>
@@ -429,7 +429,7 @@ console.log(formattedDate); // Output: 19/03/2024
     <input id="chkVisaConsent" type="checkbox" tabIndex="8" name="chkVisaConsent" required />
     <label className='visaholder' htmlFor="chkVisaConsent" style={{lineHeight:"inherit", marginBottom:"25px"}}>The visa holder has consented to this check.</label>
   </div> */}
-  <button type='submit'>Check Visa</button>
+  <button type='submit'>Check E Permit</button>
 </form>
 
             

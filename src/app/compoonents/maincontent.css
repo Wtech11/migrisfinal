@@ -143,7 +143,7 @@ button.downbtn {
     display: none;
 }
 .mainform button {
-    background: #09c;
+    background: #005ea8;
     color: #ffffff;
     font-size: 12px;
     padding: 10px;
@@ -154,4 +154,58 @@ button.downbtn {
     background: #ff000070;
     margin-bottom: 10px;
 }
-
+.maxocont{
+    display: flex;
+    height: max-content;
+}
+.userdatamain {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.maxocontin {
+    flex: 1 1 0%;
+    margin-left: 20px;
+}
+strong.fullinput {
+    width: 460px;
+}
+@media(max-width:768px){
+    .maincontentsid {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+    strong.fullinput {
+        width: 100%;
+    }
+    .maxocontin {
+        flex: 1 1 0%;
+        margin-left: 0px !important;
+    }
+    .userdatain strong {
+        width: auto;
+        margin-right: 22px;
+    }
+    .userdatamain {
+        display: block;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .userdatain {
+        width: 100%;
+        padding: 20px 10px;
+    }
+    .maxocont {
+        display: block;
+        height: -moz-max-content;
+        height: max-content;
+    }
+    .formin label {
+        font-size: 12px;
+        /* margin-right: 50px; */
+        width: max-content;
+        line-height: 12px;
+        /* display: flex; */
+    }
+}

@@ -226,6 +226,10 @@ nav {
 .navbar-nav {
     flex-direction: row !important;
 }
+.mobile-menu-toggle svg {
+    width: 15px;
+    height: 15px;
+}
 .navbar-nav {
     display: flex;
     flex-wrap: inherit;
@@ -233,6 +237,7 @@ nav {
     margin-bottom: 0;
     padding-left: 0;
     margin: 0px;
+    margin-top: -25px;
 }
 .navbar-nav .nav-item, .navbar-nav .nav-item .dropdown {
     align-items: center;
@@ -338,4 +343,132 @@ a.bluequery:hover {
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+.mobmenicon{
+    display: none;
+}
+
+.mobile-menu-open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00467E;
+    z-index: 9999;
+}
+  
+  .site-navigation.mobile-menu-open {
+    transform: translateX(0); /* Slide the menu into view */
+  }
+  
+  /* Style the navigation links */
+  .site-navigation.mobile-menu-open .navbar-site {
+    display: block; /* Show the navigation links */
+  }
+  
+  /* Style each individual navigation link */
+  .site-navigation.mobile-menu-open .navbar-site .nav-item {
+    display: block; /* Display as block elements */
+    margin-bottom: 10px; /* Add spacing between links */
+  }
+  
+  /* Additional styles for the links */
+  .site-navigation.mobile-menu-open .navbar-site .nav-item a {
+    color: white; /* Change link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Style the active link */
+  .site-navigation.mobile-menu-open .navbar-site .nav-item.active {
+    font-weight: bold; /* Make the active link bold */
+  }
+  .mobilemenu {
+    position: absolute;
+    /* left: 0; */
+    right: 0;
+    top: 10px;
+    bottom: 0;
+    padding-right: 20px;
+}
+.mobilemenu{
+    display: none;
+}
+.mobilemenu .nav-icons-container.scgfinal {
+    gap: 5px;
+    align-items: center;
+}
+.site-navigation.mobile-menu-open button.close-button svg {
+    width: 20px;
+    position: absolute;
+    height: 20px;
+    top: 5px;
+    right: 5px;
+    bottom: 0;
+}
+.site-navigation.mobile-menu-open button.close-button svg path {
+    fill: #ffffff;
+}
+
+@media(max-width:768px){
+    .headinner {
+        display: block;
+        padding: 0px;
+    }
+    .headlogo img {
+        display: none;
+    }
+    .headlogoinner h3.spanword {
+        display: none;
+    }
+    .headcont {
+        display: block;
+    }
+    .site-navigation.mobile-menu-open .navbar-site .nav-item {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+        padding: 25px 0px;
+    }
+    .site-navigation.mobile-menu-open ul#yui_patched_v3_19_2_1_1712958880732_215 {
+        border-top: 1px solid #212121;
+        margin-top: 25px;
+    }
+    .headlogo {
+        /* display: flex;
+        align-items: center;
+        gap: 15px; */
+        padding: 10px 0px;
+    }
+    .mobile-menu-open .mainhe {
+        display: block !important;
+    }
+    .mainhe{
+        display: none;
+    }
+
+    .mobmenicon{
+        display: block !important;
+    }
+    .mobhide{
+        display: none;
+    }
+    .headcont a.orangequery {
+        /* border: 0; */
+        margin-bottom: 10px;
+        width: 100%;
+        position: relative;
+        margin-top: 30px;
+    }
+    .mobilemenu{
+        display: block !important;
+    }
+    .headcont a.bluequery {
+        width: 100%;
+    }
+    .headlogoinner h2.blueword {
+        margin-left: -7px;
+        margin-top: 3px;
+    }
 }

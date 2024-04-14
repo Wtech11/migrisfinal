@@ -191,3 +191,68 @@ a.upper-box {
     height: 50px;
     fill:#ffffff;
 }
+@media(max-width:768px){
+    .aeofooter {
+        padding: 0px;
+    }
+    #footer .first .allcaps {
+        vertical-align: top !important;
+        color: #ffffff;
+        padding-left: 30px;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 8px;
+        line-height: 20px;
+        width: 100%;
+        padding-top: 20px;
+    }
+    #footer .first .allcaps span {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 10px !important;
+    }
+    .upper-footer {
+        width: 100%;
+        text-align: center;
+        display: block;
+        gap: 15px;
+        flex-shrink: 0;
+        margin-bottom: 20px;
+    }
+    a.upper-box {
+        width: 100%;
+        /* padding: 0px 20px; */
+        /* display: flex; */
+    }
+    .upper-footer {
+        width: 100%;
+        /* text-align: center; */
+        display: block;
+        padding: 0px 20px;
+    }
+    .foterlogosession {
+        display: flex;
+        float: none;
+        align-items: center;
+        position: relative;
+        gap: 15px;
+        flex-direction: row-reverse;
+        padding-right: 20px;
+    }
+    .go-top {
+        margin-right: 20;
+        margin-top: -60;
+        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        background: #FFA157;
+        height: 50px;
+        width: 50px;
+        display: none;
+    }
+}
